@@ -1,0 +1,384 @@
+.background {
+  background: linear-gradient(180deg, #F8E4AE 0%, rgba(218, 255, 253, 0.87) 100%);
+}
+
+body {
+  font-family: Poppins !important;
+
+}
+
+.burger-image {
+  width: 70px;
+  height: 70px;
+}
+
+.e-and-d {
+  color: #000;
+  font-family: Post No Bills Colombo ExtraBold !important;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+
+.menu-style {
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.btn-class {
+  border-radius: 3px;
+  background: #F6E4B1;
+  font-family: poppins;
+  border: none;
+  box-shadow: 10px 3px 14px -4px rgba(0, 0, 0, 0.25);
+}
+
+.line-class {
+  width: 2px;
+  height: 18px;
+  background: rgba(106, 106, 106, 0.82);
+  margin-left: 1rem;
+  padding-bottom: 1.7rem;
+}
+
+.fast-class {
+  color: #EA8223;
+  font-family: Poppins;
+  font-size: 125px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -3.75px;
+}
+
+.small-class {
+  color: #000;
+  font-family: Poppins;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sub-text {
+  color: rgba(115, 115, 115, 0.81);
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.btn2 {
+  padding: 1rem;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 70px;
+  background: #2F2F2F;
+  box-shadow: 0px 20px 32px -8px rgba(0, 0, 0, 0.25);
+}
+
+.btn3 {
+  font-family: Poppins;
+  border: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: none;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-sub {
+  position: relative;
+  bottom: 40%;
+  left: 15%;
+  max-width: 50px;
+  max-height: 48.741px;
+}
+
+.img-typo {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  bottom: 15%;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.read-more-style {
+  background-color: #EA6B23;
+  border-radius: 5px;
+  border: none;
+  padding: 1rem;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+.popular {
+  color: #000;
+  font-family: Poppins;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sub-popular {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+
+.btns {
+  background: none;
+  border: 1px solid #EA6B23;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.btns:hover {
+  background: #EA6B23;
+}
+
+.typo-burger {
+  color: #000;
+
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.typo-sub {
+  color: rgba(0, 0, 0, 0.50);
+
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* card-carousel.component.css */
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 500ms ease-in-out;
+}
+
+.controls {
+  margin-top: 16px;
+}
+
+
+.owl-carousel .non-focused {
+  opacity: 0;
+  /* Adjust the opacity to your preference */
+  transform: scale(0.8);
+  /* Adjust the scale to your preference */
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.owl-carousel .center {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+::ng-deep .owl-nav {
+  justify-content: space-between;
+  display: flex;
+  width: 95%;
+}
+
+.says {
+  color: #000;
+
+  font-family: Poppins;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.56px;
+}
+
+.cus {
+  color: rgba(0, 0, 0, 0.70);
+
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 41px;
+  /* 227.778% */
+  letter-spacing: -0.36px;
+}
+
+.john-doe {
+  color: #000;
+
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41px;
+  /* 227.778% */
+  letter-spacing: -0.36px;
+}
+
+::ng-deep .owl-item {
+  opacity: 0.3;
+}
+
+::ng-deep .owl-item.active.center {
+  opacity: 1;
+}
+
+
+
+.in-touch {
+  color: #000;
+  font-family: Poppins;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.16px;
+}
+
+.sub-touch {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+input {
+  border: 1px solid rgba(234, 107, 35, 0.30);
+  background: rgba(255, 251, 251, 0.29);
+  height: 3rem;
+}
+
+textarea {
+  border: 1px solid rgba(234, 107, 35, 0.30);
+  background: rgba(255, 251, 251, 0.29);
+}
+
+label {
+  color: #000;
+
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+
+.submit {
+  border-radius: 5px;
+  background: #EA6B23;
+  color: #FFF;
+  border: none;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 174px;
+  height: 50px;
+}
+
+.main-details{
+    color: #000;
+
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.sub-details{
+    color: #000;
+
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.32px;
+}
+
+.links:hover{
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.subscribe{
+    border-radius: 5px;
+    background: linear-gradient(0deg, #000 0%, #000 100%), linear-gradient(0deg, #FFF 0%, #FFF 100%), #FFF;
+    color: #FFF;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    float: right;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  /* Adjust styles for smaller screens */
+  .owl-carousel .owl-item {
+    width: 80%;
+    /* Adjust the width as needed */
+    margin: 0 auto;
+  }
+
+}

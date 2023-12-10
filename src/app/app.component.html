@@ -1,0 +1,421 @@
+<div class="background">
+  <div style="margin-left: 4rem;margin-right: 4rem;">
+
+    <div class="col-sm-12 row">
+      <div class="col-sm-3 d-flex">
+        <div class="d-flex">
+          <img class="burger-image" src="../assets/images/Hamburger.png" alt="">
+          <span class="burger-image mt-4 ml-3">
+            <img src="../assets/images/E & D.png" alt="">
+          </span>
+        </div>
+      </div>
+      <div class="col-sm-5 row m-4 justify-content-center" style="text-align: center;">
+        <ng-container *ngFor="let item of arrMenu">
+          <span class="col-sm-1 menu-style" style="margin-right: 3.5rem;">
+            {{item.strName}}
+          </span>
+        </ng-container>
+      </div>
+      <div class="col-sm-3 m-4 d-flex justify-content-center" style="    height: 1.7rem;">
+        <button class="btn-class" style="margin-right: 1rem;">Login</button>
+        <button class="btn-class">Register</button>
+        <span class="line-class"></span>
+        <img style="width: 19px;height: 19px;margin-top: 5px;margin-left: 1rem;"
+          src="../assets/images/Shopping Cart.png" alt="">
+
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-12 row">
+          <div class="col-sm-6 row">
+            <div class="fast-class" style="width: auto;height: fit-content;">
+              Fast
+            </div>
+            <div style="width: auto;    height: fit-content;">
+              <div class="small-class" style="    margin-top: 1.9rem;
+                    margin-left: 1rem;    margin-bottom: -25px;">
+                Food
+              </div>
+              <div class="small-class" style="margin-left: 1rem;">
+                Delivery</div>
+            </div>
+            <div>
+
+              <div class="sub-text">
+                Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur.
+              </div>
+              <div class="mt-3 mb-3">
+
+                <button class="btn2">Order Now</button>
+                <img style="width: 68px;height: 66.287px;    padding-bottom: 0.3rem;
+                    margin-left: 1rem;" src="../assets/images/Ellipse 2.svg" alt="">
+                <img style="position: relative;right: 45px;bottom: 3px;" src="../assets/images/Polygon 1.svg" alt="">
+                <button class="btn3">Watch Video</button>
+
+              </div>
+            </div>
+            <div class="row mt-3">
+              <ng-container *ngFor="let item of arrFoodList">
+                <div class="col-4 col-sm-2 mb-3" style="    margin-right: 2rem">
+                  <div style="border-radius: 50px;
+                      background: #FFF;height: 145.247px;width: 95px;">
+                    <div class="d-flex justify-content-center pt-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
+                        <ellipse cx="32.5" cy="32.1148" rx="32.5" ry="31.6814" fill="#F0E4B6" />
+                      </svg>
+                    </div>
+
+                    <img class="img-sub" style="    margin-left: 0.5rem;" [src]="item.strIcon" alt="">
+                    <div class="img-typo">
+                      {{item.strName}}
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
+            </div>
+          </div>
+
+          <div class="col-sm-6 d-flex justify-content-center">
+            <img src="../assets/images/17372 [Converted] 1.png" alt="" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-lg-5 col-md-12 d-flex justify-content-center">
+              <img src="../assets/images/Cook is making soup.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-7 col-md-12">
+              <div class="mb-4"
+                style="color: #000; font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 700;">
+                About us
+              </div>
+              <div style="color: #000; font-family: 'Poppins', sans-serif; font-size: 18px; line-height: 1.8;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla ...
+              </div>
+              <div class="mt-3">
+                <button class="btn btn-primary read-more-style">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-sm-12">
+          <div class="col-sm-12 popular d-flex justify-content-center">
+            Our Popular Menu
+          </div>
+          <div class="justify-content-center d-flex">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-7">
+              <div class="sub-popular">
+
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum ex ea commodo consequat. Duis aute irure dolor in repr
+                ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+              </div>
+
+              <div class="d-flex flex-wrap justify-content-center mt-4">
+                <ng-container *ngFor="let item of arrFoodList">
+                  <button class="btns mb-3 mx-2">
+                    <svg style="background: url();" xmlns="http://www.w3.org/2000/svg" width="36" height="33"
+                      viewBox="0 0 36 33" fill="none">
+                      <ellipse cx="18.1273" cy="16.5" rx="17.3752" ry="16.5" fill="#EA6B23" />
+                    </svg>
+                    <img style="max-width: 23.167px; max-height: 22px; position: relative; right: 30px;"
+                      [src]="item.strIcon2" alt="">
+                    <span style="margin-right: 2rem;">
+                      {{item.strName}}
+                    </span>
+                  </button>
+                </ng-container>
+              </div>
+
+
+              <div class="container" style="margin-top: 5rem;">
+                <div class="row">
+                  <ng-container *ngFor="let item of arrBurgerList">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                      <div class="card" style="margin-bottom: 4rem;">
+                        <img class="card-img-top" style="max-width: 189px; max-height: 189px; margin: 0 auto;
+                    position: relative;bottom: 3rem;" [src]="item.strUrl" alt="">
+                        <div class="card-body">
+                          <div class="typo-burger">
+                            {{item.strName}}
+                          </div>
+                          <div class="typo-sub mb-5">
+                            {{item.strDescription}}
+                          </div>
+
+                          <div class="d-flex mt-3 mb-3" style="justify-content: space-between;">
+                            <div style="border-radius: 10px 1px 10px 2px;
+                        background: #EA6B23;
+                        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);    padding: 0.2rem 1rem 0.3rem;">
+                              <img src="../assets/images/Shopping Cart (1).png" alt="">
+
+                            </div>
+                            <div class="typo-burger">
+                              {{item.strRate}}
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </ng-container>
+                </div>
+              </div>
+
+              <div style="    float: right;
+          margin-right: 2rem;
+          margin-top: 1rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="173" height="50" viewBox="0 0 173 50" fill="none">
+                  <path
+                    d="M98 20C98 8.9543 106.954 0 118 0H171C172.105 0 173 0.895431 173 2V30C173 41.0457 164.046 50 153 50H100C98.8954 50 98 49.1046 98 48V20Z"
+                    fill="white" />
+                  <path
+                    d="M0 20C0 8.9543 8.95431 0 20 0H73C74.1046 0 75 0.895431 75 2V30C75 41.0457 66.0457 50 55 50H2C0.895429 50 0 49.1046 0 48V20Z"
+                    fill="white" />
+                  <path
+                    d="M152.061 26.0607C152.646 25.4749 152.646 24.5251 152.061 23.9393L142.515 14.3934C141.929 13.8076 140.979 13.8076 140.393 14.3934C139.808 14.9792 139.808 15.9289 140.393 16.5147L148.879 25L140.393 33.4853C139.808 34.0711 139.808 35.0208 140.393 35.6066C140.979 36.1924 141.929 36.1924 142.515 35.6066L152.061 26.0607ZM120 26.5H151V23.5H120V26.5Z"
+                    fill="white" />
+                  <path
+                    d="M152.061 26.0607C152.646 25.4749 152.646 24.5251 152.061 23.9393L142.515 14.3934C141.929 13.8076 140.979 13.8076 140.393 14.3934C139.808 14.9792 139.808 15.9289 140.393 16.5147L148.879 25L140.393 33.4853C139.808 34.0711 139.808 35.0208 140.393 35.6066C140.979 36.1924 141.929 36.1924 142.515 35.6066L152.061 26.0607ZM120 26.5H151V23.5H120V26.5Z"
+                    fill="#EA6B23" />
+                  <path
+                    d="M20.9393 23.9393C20.3536 24.5251 20.3536 25.4749 20.9393 26.0607L30.4853 35.6066C31.0711 36.1924 32.0208 36.1924 32.6066 35.6066C33.1924 35.0208 33.1924 34.0711 32.6066 33.4853L24.1213 25L32.6066 16.5147C33.1924 15.9289 33.1924 14.9792 32.6066 14.3934C32.0208 13.8076 31.0711 13.8076 30.4853 14.3934L20.9393 23.9393ZM53 23.5L22 23.5V26.5L53 26.5V23.5Z"
+                    fill="white" />
+                  <path
+                    d="M20.9393 23.9393C20.3536 24.5251 20.3536 25.4749 20.9393 26.0607L30.4853 35.6066C31.0711 36.1924 32.0208 36.1924 32.6066 35.6066C33.1924 35.0208 33.1924 34.0711 32.6066 33.4853L24.1213 25L32.6066 16.5147C33.1924 15.9289 33.1924 14.9792 32.6066 14.3934C32.0208 13.8076 31.0711 13.8076 30.4853 14.3934L20.9393 23.9393ZM53 23.5L22 23.5V26.5L53 26.5V23.5Z"
+                    fill="#EA6B23" />
+                </svg>
+              </div>
+            </div>
+            <div class="col-sm-3">
+
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid" style="margin-top: 5rem;">
+          <div class="says mb-5" style="text-align: center;">Our Customer's Says</div>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="news-slider" class="owl-carousel">
+                <div *ngFor="let item of arrMenu" class="card col-sm-10">
+                  <img style="width: 40px;
+              height: 40px;margin: 2rem;" src="../assets/images/Quote Left.png" alt="">
+                  <div class="cus" style="margin: 2rem;">
+                    Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum
+                  </div>
+                  <div style="background: rgba(234, 107, 35, 0.16);height: 126px;" class="d-flex">
+                    <img style="width: 78px;height: 78px;margin: 2rem;" src="../assets/images/purple user icon.png"
+                      alt="">
+                    <div style="margin: 1.5rem;">
+                      <div class="john-doe">
+                        John Doe
+                      </div>
+                      <div class="d-flex">
+                        <img src="../assets/images/Star.png" style="width: 22px;height: 22px;" alt="">
+                        <img src="../assets/images/Star.png" style="width: 22px;height: 22px;" alt="">
+                        <img src="../assets/images/Star.png" style="width: 22px;height: 22px;" alt="">
+                        <img src="../assets/images/Star.png" style="width: 22px;height: 22px;" alt="">
+                        <img src="../assets/images/Star (1).png" style="width: 22px;height: 22px;" alt="">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 mt-5">
+          <div class="in-touch" style="text-align: center;">
+            Get In Touch With Us
+          </div>
+          <div class="sub-touch" style="text-align: center;">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="../assets/images/Support operator helps to solve the problem.png" alt="">
+              <div class="d-flex">
+                <img style="max-width: 30px;
+           max-height: 30px;margin:1rem;" src="../assets/images/Location.png" alt="">
+                <div class="column">
+                  <span class="main-details" style="width: fit-content;
+            display: flex;">
+                    Address
+
+                  </span>
+                  <span class="sub-details" style="width: fit-content;
+            display: flex;">Casa 4 16135 Souza Rodovia,</span>
+                  <span class="sub-details" style="width: fit-content;
+            display: flex;">Rio Tinto, MO 2520</span>
+                </div>
+              </div>
+
+              <div class="d-flex mt-5">
+                <img style="max-width: 30px;
+            max-height: 30px;margin:1rem;" src="../assets/images/Phone.png" alt="">
+                <div class="column">
+                  <span class="main-details" style="width: fit-content;
+             display: flex;">
+                    Phone
+
+                  </span>
+                  <span class="sub-details" style="width: fit-content;
+             display: flex;">Mobile: +(84) 546-6789</span>
+                  <span class="sub-details" style="width: fit-content;
+             display: flex;"> Hotline: +(84) 456-6789</span>
+                </div>
+              </div>
+
+              <div class="d-flex mt-5">
+                <img style="max-width: 30px;
+            max-height: 30px;margin:1rem;" src="../assets/images/Email.png" alt="">
+                <div class="column">
+                  <span class="main-details" style="width: fit-content;
+             display: flex;">
+                    Email
+
+                  </span>
+                  <span class="sub-details" style="width: fit-content;
+             display: flex;">Info@emaple.com</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" style="border-radius: 2px;
+        border: 1px solid rgba(234, 107, 35, 0.30);
+        background: rgba(255, 255, 255, 0.00);">
+              <form action="" [formGroup]="touchWithUsForm">
+                <div class="row">
+                  <div class="col-sm-12 mt-4">
+                    <label for="strName">Your Name</label>
+                    <input type="text" placeholder="Abc" class="form-control" formControlName="strName">
+                  </div>
+                  <div class="col-sm-12 mt-4">
+                    <label for="strEmail">Email Address</label>
+                    <input type="text" placeholder="Abc@example.com" class="form-control" formControlName="strEmail">
+                  </div>
+                  <div class="col-sm-12 mt-4">
+                    <label for="strSUbject">Subject</label>
+                    <input type="text" placeholder="This is an optional" class="form-control" formControlName="strName">
+                  </div>
+                  <div class="col-sm-12 mt-4">
+                    <label for="strMessage">Message</label>
+                    <textarea class="form-control" cols="30" rows="10" placeholder="Hi! i’d like to ask about"
+                      formControlName="strMessage">
+
+                </textarea>
+                  </div>
+                  <div class="mt-2">
+                    <button class="submit">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="mt-5 mb-3" style="border-top: 1px solid rgba(0, 0, 0, 0.30);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+  border-bottom-width: medium;
+  border-top-width: medium;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="d-flex">
+                <img class="burger-image" src="../assets/images/Hamburger.png" alt="">
+                <span class="burger-image mt-4 ml-3">
+                  <img src="../assets/images/E & D.png" alt="">
+                </span>
+              </div>
+              <div style="color: #000;
+          font-family: Poppins;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua
+              </div>
+            </div>
+            <div class="col-md-3 text-center">
+              <ng-container *ngFor="let item of arrMenu">
+                <div class="mb-2 links" style="
+            font-family: Poppins;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.6px;">
+                  {{item.strName}}
+                </div>
+              </ng-container>
+            </div>
+            <div class="col-md-3 text-center">
+              <ng-container *ngFor="let item of arrOther">
+                <div class="mb-2 links" style="
+            font-family: Poppins;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.6px;">
+                  {{item.strName}}
+                </div>
+              </ng-container>
+            </div>
+            <div class="col-md-3 text-center">
+              <div class="mb-2 " style="
+          color: rgba(0, 0, 0, 0.50);
+          font-family: Poppins;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: -0.6px;">
+                Newsletter
+              </div>
+              <div class="col-md-12">
+                <input type="text" class="form-control" placeholder="Enter Your Email Address">
+              </div>
+              <button class="subscribe">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div style="color: #000;
+
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  text-align: center;">
+        2023 All rights reverved
+      </div>
