@@ -101,7 +101,9 @@ body {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  min-width: 70%;
+  max-height: 100%;
+ 
 }
 
 .img-sub {
@@ -196,6 +198,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+ 
 }
 
 .carousel {
@@ -372,6 +375,11 @@ letter-spacing: -0.32px;
 
 }
 
+.customer-container{
+  display: flex;
+  height: 126px;
+}
+
 @media only screen and (max-width: 767px) {
 
   /* Adjust styles for smaller screens */
@@ -381,4 +389,33 @@ letter-spacing: -0.32px;
     margin: 0 auto;
   }
 
+}
+
+
+@media (max-width: 767px) {
+  .card {
+    width: 100%; /* Make the cards take the full width on smaller screens */
+  }
+
+  .carousel-container {
+    margin-top: 3rem; /* Adjust the top margin for the container on smaller screens */
+  }
+
+  .carousel {
+    overflow-x: auto; /* Enable horizontal scrolling for the carousel on smaller screens */
+    scroll-snap-type: x mandatory;
+  }
+
+  .controls {
+    display: none; /* Hide controls on smaller screens if needed */
+  }
+
+  .customer-container{
+    display: block;
+    height: auto;
+  }
+
+  .fast-class{
+    margin-bottom: -65px;
+  }
 }

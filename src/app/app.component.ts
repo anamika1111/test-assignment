@@ -53,10 +53,10 @@ arrFoodList = [
 ]
 
 arrBurgerList = [
-  {strName:"Spicy Chicken Burger",strUrl:"../assets/images/Ellipse 11.svg",strRate:"$ 30.00",strDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore"},
+  {strName:"Spicy Chicken Burger",strUrl:"../assets/images/Ellipse 11.svg",strRate:"$ 30.00",strDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore "},
   {strName:"Spicy Beef Burger",strUrl:"../assets/images/Ellipse 12.svg",strRate:"$ 30.00",strDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore"},
-  {strName:"Potato Burger",strUrl:"../assets/images/Ellipse 13.svg",strRate:"$ 30.00",strDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore"},
-  {strName:"Zinger Burger",strUrl:"../assets/images/Ellipse 14.svg",strRate:"$ 30.00",strDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore"},
+  {strName:"Potato Beef Burger",strUrl:"../assets/images/Ellipse 13.svg",strRate:"$ 30.00",strDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore"},
+  {strName:"Zinger Chicken Burger",strUrl:"../assets/images/Ellipse 14.svg",strRate:"$ 30.00",strDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore"},
   {strName:"Cheese Chicken Burger",strUrl:"../assets/images/Ellipse 15.svg",strRate:"$ 30.00",strDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore"},
   {strName:"Crispy Chicken Burger",strUrl:"../assets/images/Ellipse 16.svg",strRate:"$ 30.00",strDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore"},
 
@@ -76,9 +76,25 @@ ngAfterViewInit(): void {
   $(document).ready(function () {
     $("#news-slider").owlCarousel({
       items: 3,
-      itemsDesktop: [1199, 3],
-      itemsDesktopSmall: [980, 2],
-      itemsMobile: [600, 1],
+      // itemsDesktop: [1199, 3],
+      // itemsDesktopSmall: [980, 2],
+      // itemsMobile: [600, 1],
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          600:{
+              items:2,
+              nav:true
+          },
+          1000:{
+              items:3,
+              nav:true,
+              
+          }
+      },
       nav: true,
       dots: true,
       navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
