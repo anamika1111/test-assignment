@@ -7,9 +7,10 @@ body {
 
 }
 
+
 .burger-image {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
 }
 
 .e-and-d {
@@ -20,15 +21,28 @@ body {
   font-weight: 800;
   line-height: normal;
 }
+.nav-item{
+width: 100px;
+height: 33px;
+flex-shrink: 0;
+color: #EA6B23;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-left: 140px;
+margin-bottom: 30px;
 
 
-.menu-style {
-  font-family: Poppins;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
+
+#eandd{
+  margin-bottom: -39px;
+  margin-left: -10px;
+}
+
+
 
 
 .btn-class {
@@ -228,7 +242,7 @@ body {
 ::ng-deep .owl-nav {
   justify-content: space-between;
   display: flex;
-  width: 95%;
+ 
 }
 
 .says {
@@ -378,7 +392,25 @@ letter-spacing: -0.32px;
 .customer-container{
   display: flex;
   height: 126px;
+  justify-content: space-between;
+  width: 27rem;
+  margin-left: -1rem !important;
 }
+
+
+#home{
+  color: #EA6B23;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 767px) {
 
@@ -413,9 +445,93 @@ letter-spacing: -0.32px;
   .customer-container{
     display: block;
     height: auto;
+    justify-content: center;
+   
   }
 
   .fast-class{
     margin-bottom: -65px;
   }
+
+  #eandd{
+    margin-left: -40px;
+   
+   
+  }
+
+ #subtext, #ordernow{
+  margin-bottom: 10px;
+  margin-left: 50px;
+ }
+
+ #foodlist{
+  margin-left: 18px;
+  gap:0rem;
+ 
+ }
+ #img1{
+  height: 240px;
+  width: 900px;
+ }
+
+ #cont{
+  margin-left: 10px;
+ }
+#more{
+  margin-left: 50px;
 }
+#pop{
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+ 
+}
+#cont2{
+  width: 290px;
+  margin-left: -35px;
+}
+
+#cust{
+  margin-left: -30px;
+}
+#arrmenu1{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#fast{
+  margin-top: -80px;
+}
+#now{
+ margin-bottom: 20px;
+
+}
+
+#now1{
+  margin-bottom: 10px;
+ 
+ 
+ }
+
+#now2{
+  margin-top: 10px;
+ 
+ }
+
+ 
+ #regbtn{
+  padding-right: 90px;
+ 
+ }
+
+ .navbar-toggler{
+  margin-left: -90px;
+ }
+
+
+
+}
+
+
+
+

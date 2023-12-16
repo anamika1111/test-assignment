@@ -1,16 +1,16 @@
 <div class="background">
   <div style="margin-left: 4rem;margin-right: 4rem;">
 
-    <div class="col-sm-12 row">
+    <!-- <div class="col-sm-12 row">
       <div class="col-sm-3 d-flex">
-        <div class="d-flex">
+        <div class="d-flex" id="eandd">
           <img class="burger-image" src="../assets/images/Hamburger.png" alt="">
           <span class="burger-image mt-4 ml-3">
             <img src="../assets/images/E & D.png" alt="">
           </span>
         </div>
       </div>
-      <div class="col-sm-5 row m-4 justify-content-center" style="text-align: center;">
+      <div class="col-sm-5 row m-4 justify-content-center arrmenu1" style="text-align: center;" id="arrmenu1">
         <ng-container *ngFor="let item of arrMenu">
           <span class="col-sm-1 menu-style" style="margin-right: 3.5rem;">
             {{item.strName}}
@@ -25,18 +25,62 @@
           src="../assets/images/Shopping Cart.png" alt="">
 
       </div>
-    </div>
+    </div> -->
+
+  
+
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <div class="d-flex" id="eandd">
+          <img class="burger-image" src="../assets/images/Hamburger.png" alt="">
+          <span class="burger-image mt-4 ml-3">
+            <img src="../assets/images/E & D.png" alt="">
+          </span>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 "  style="margin-top: 0.5rem; margin-left:-2rem " >
+            <li class="nav-item" >
+              <a class="nav-link active" aria-current="page" href="#" >Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+           
+          </ul>
+        </div>
+
+        <div class="col-sm-3 m-4 d-flex justify-content-center" style="height: 2.1rem;" id="regbtn">
+          <button class="btn-class" style="margin-right: 1.5rem;">Login</button>
+          <button class="btn-class">Register</button>
+          <span class="line-class"></span>
+          <img style="width: 19px;height: 19px;margin-top: 5px;margin-left: 1rem;"
+            src="../assets/images/Shopping Cart.png" alt="">
+  
+        </div>
+
+      </div>
+    </nav>
 
     <div class="mt-5">
       <div class="row">
         <div class="col-sm-12 row">
           <div class="col-sm-6 row">
-            <div class="fast-class" style="width: auto;height: fit-content;">
+            <div class="fast-class" style="width: auto;height: fit-content;" id="fast">
               Fast
             </div>
-            <div style="width: auto;    height: fit-content;">
+            <div style="width: auto;    height: fit-content;" >
               <div class="small-class" style="    margin-top: 1.9rem;
-                    margin-left: 1rem;    margin-bottom: -25px;">
+                    margin-left: 1rem;    margin-bottom: -25px;" >
                 Food
               </div>
               <div class="small-class" style="margin-left: 1rem;">
@@ -44,21 +88,24 @@
             </div>
             <div>
 
-              <div class="sub-text">
+              <div class="sub-text" id="subtext">
                 Duis aute irure dolor in reprehenderit in voluptate
                 velit esse cillum dolore eu fugiat nulla pariatur.
               </div>
-              <div class="mt-3 mb-3">
+              <div class="mt-3 mb-3" id="ordernow">
 
-                <button class="btn2">Order Now</button>
+                <button class="btn2" id="now">Order Now</button>
+               
                 <img style="width: 68px;height: 66.287px;    padding-bottom: 0.3rem;
-                    margin-left: 1rem;" src="../assets/images/Ellipse 2.svg" alt="">
-                <img style="position: relative;right: 45px;bottom: 3px;" src="../assets/images/Polygon 1.svg" alt="">
-                <button class="btn3">Watch Video</button>
+                    margin-left: 1rem;" src="../assets/images/Ellipse 2.svg" alt="" id="now" >
+                <img style="position: relative;right: 45px;bottom: 3px;" src="../assets/images/Polygon 1.svg" alt=""id="now1">
+              
+                <button class="btn3"  id="now2">Watch Video</button>
 
               </div>
             </div>
-            <div class="row mt-3 justify-content-center" >
+
+            <div class="row mt-3 justify-content-center" id="foodlist" >
               <ng-container *ngFor="let item of arrFoodList">
                 <div class="col-4 col-sm-2 mb-3" style="    margin-right: 2rem">
                   <div style="border-radius: 50px;
@@ -79,12 +126,12 @@
             </div>
           </div>
 
-          <div class="col-sm-6 d-flex justify-content-center">
+          <div class="col-sm-6 d-flex justify-content-center" id="img1">
             <img src="../assets/images/17372 [Converted] 1.png" alt="" class="img-fluid">
           </div>
         </div>
 
-        <div class="container mt-5">
+        <div class="container mt-5" id="cont">
           <div class="row">
             <div class="col-lg-5 col-md-12 d-flex justify-content-center">
               <img src="../assets/images/Cook is making soup.png" alt="" class="img-fluid">
@@ -101,7 +148,7 @@
                 fugiat nulla ...
               </div>
               <div class="mt-3">
-                <button class="btn btn-primary read-more-style">
+                <button class="btn btn-primary read-more-style" id="more">
                   Read More
                 </button>
               </div>
@@ -111,8 +158,8 @@
 
 
 
-        <div class="col-sm-12">
-          <div class="col-sm-12 popular d-flex justify-content-center">
+        <div class="col-sm-12" >
+          <div class="col-sm-12 popular d-flex justify-content-center" id="pop">
             Our Popular Menu
           </div>
           <div class="justify-content-center d-flex">
@@ -120,14 +167,14 @@
 
             </div>
             <div class="col-sm-7">
-              <div class="sub-popular">
+              <div class="sub-popular" >
 
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit anim id est laborum ex ea commodo consequat. Duis aute irure dolor in repr
                 ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
               </div>
 
-              <div class="d-flex flex-wrap justify-content-center mt-4">
+              <div class="d-flex flex-wrap justify-content-center mt-4" >
                 <ng-container *ngFor="let item of arrFoodList">
                   <button class="btns mb-3 mx-2">
                     <svg style="background: url();" xmlns="http://www.w3.org/2000/svg" width="36" height="33"
@@ -144,7 +191,7 @@
               </div>
 
 
-              <div class="container" style="margin-top: 5rem;">
+              <div class="container" style="margin-top: 5rem;" id="cont2">
                 <div class="row">
                   <ng-container *ngFor="let item of arrBurgerList">
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
@@ -208,8 +255,9 @@
             </div>
           </div>
         </div>
+
         <div class="container-fluid" style="margin-top: 5rem;">
-          <div class="says mb-5" style="text-align: center;">Our Customer's Says</div>
+          <div class="says mb-5" style="text-align: center;" id="cust">Our Customer's Says</div>
           <div class="row">
             <div class="col-md-12">
               <div id="news-slider" class="owl-carousel">
@@ -362,7 +410,8 @@
                 dolore magna aliqua
               </div>
             </div>
-            <div class="col-md-3 text-center">
+
+            <div class="col-md-3 text-center" id="arrmenu1">
               <ng-container *ngFor="let item of arrMenu">
                 <div class="mb-2 links" style="
             font-family: Poppins;
@@ -375,7 +424,8 @@
                 </div>
               </ng-container>
             </div>
-            <div class="col-md-3 text-center">
+
+            <div class="col-md-3 text-center" id="arrmenu1">
               <ng-container *ngFor="let item of arrOther">
                 <div class="mb-2 links" style="
             font-family: Poppins;

@@ -10,6 +10,7 @@ declare var $: any;
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements AfterViewInit {
+ 
 
 
   constructor(
@@ -17,6 +18,8 @@ export class AppComponent implements AfterViewInit {
   ){
 
   }
+
+ 
 
   currentIndex = 0;
 
@@ -108,3 +111,4 @@ ngAfterViewInit(): void {
 
 }
 }
+
